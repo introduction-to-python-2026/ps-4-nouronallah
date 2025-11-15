@@ -23,9 +23,7 @@ def split_at_first_digit(formula):
     end = 1
     split_formula = []
 
-    # Loop starting from second character
     for char in formula[1:]:
-        # If we find an uppercase → we cut
         if char.isupper():
             split_formula.append(formula[start:end])
             start = end
